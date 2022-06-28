@@ -1,31 +1,47 @@
-@import "basestyleproject.scss";
+@font-face {
+  font-family: "roboto-regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "roboto-medium";
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+html {
+  font: 18px/1.5 "roboto-regular";
+  color: #cacaca;
+  background-color: #08020d;
+}
 
 h1 {
-    font-size: 60px;
-    line-height: 90px;
-    font-weight: bold;
-    text-transform: capitalize;
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 h2 {
-    font-size: 38px;
-    line-height: 57px;
-    font-weight: bold;
-    text-transform: capitalize;
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 @media (max-width: 414px) {
-    h1 {
-        font-style: 30px;
-        line-height: 25px;
-        font-weight: bold;
-        text-transform: capitalize;
-    }
+  h1 {
+    font-style: 30px;
+    line-height: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
 
-    h2 {
-        font-style: 18px;
-        line-height: 27px;
-        font-weight: bold;
-        text-transform: capitalize;
-    }
+  h2 {
+    font-style: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
 }
