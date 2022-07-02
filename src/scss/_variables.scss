@@ -2,19 +2,24 @@
     font-family: "roboto-regular";
     src: url(../fonts/Roboto-Regular.ttf);
 }
-
 @font-face {
     font-family: "roboto-bold";
     src: url(../fonts/Roboto-Bold.ttf);
 }
-
 @font-face {
     font-family: "roboto-medium";
     src: url(../fonts/Roboto-Medium.ttf);
 }
-
-html {
+body {
     font: 18px/1.5 "roboto-regular";
-    color: #cacaca;
+    color: #ffffff;
     background-color: #08020d;
+}
+@mixin fz ($number) {
+    .fz#{$number} {
+        font-size: $number * 8px + 8px;
+    }
+}
+@for $number from 1 through 7 {
+    @include fz($number);
 }

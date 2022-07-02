@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout-designer-project-lvl2 user-df24b52739ccea78</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-    
+    <div id="page-description" class="header">
+        <div class="section">
+            <div class="header__menu none">
+                <div class="menu__item1">
+                    <img src="./images/logo.svg" class="logo" alt="logo">
+                    <a class="menu__color margl16" href="">MUSIC BOX</a>
+                </div>
+                <nav class="menu__item margl90">
+                    <a class="menu__color" href="">ГЛАВНАЯ</a>
+                    <a class="menu__coloritem" href="">КАТАЛОГ</a>
+                    <a class="menu__coloritem" href="">ИСПОЛНИТЕЛИ</a>
+                    <a class="menu__coloritem" href="">КОНТАКТЫ</a>
+                </nav>
+                <div class="menu__item">
+                    <form></form>
+                        <label for="search" class="sr-only">Поиск по сайту</label>
+                        <input id="search" class="seach" placeholder="ПОИСК..." type="text">
+                    </form>
+                </div>
+            </div>
+            <div class="section1">
+                <h1>ОНЛАЙН МУЗЫКА ГДЕ УГОДНО</h1>
+                <h2>БЕЗ ОГРАНИЧЕНИЙ</h2>
+                <p class="fz1 margt31">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+                <div class="form__row1">
+                    <form action="">
+                        <div class="form__row">
+                            <div class="form__element">
+                                <label for="regname" class="sr-only">Имя</label>
+                                <input id="regname" class="forms" placeholder="Имя" type="text">
+                            </div>
+                            <div class="form__element">
+                                <label for="mail" class="sr-only">Email</label>
+                                <input id="mail" class="forms" placeholder="Email" type="text">
+                            </div>
+                        </div>
+                    </form>
+                    <a class="batton" href="#" type="submit">ПОЛУЧИТЬ ДОСТУП</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
