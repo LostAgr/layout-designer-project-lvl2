@@ -200,6 +200,10 @@ a {
   margin-top: 31px;
 }
 
+.margt40px {
+  margin-top: 40px;
+}
+
 .margl90 {
   margin-left: 90px;
 }
@@ -207,6 +211,10 @@ a {
 .logo {
   width: 24px;
   height: 24px;
+}
+
+.margt24 {
+  margin-top: 24px;
 }
 
 .marg24 {
@@ -228,6 +236,8 @@ a {
   margin: 0px 120px;
   padding: 200px 0px;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .forms {
@@ -419,5 +429,90 @@ a {
 
   .forms::placeholder {
     color: #ffffff;
+  }
+}
+.section2 {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 0 120px;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.flex__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 0 40px;
+}
+
+span {
+  vertical-align: super;
+  font-size: 32px;
+}
+
+.pricing-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 31%;
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+}
+
+.bg-sub1 {
+  background-image: url(../images/subscribe_1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-sub2 {
+  background-image: url(../images/subscribe_2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-sub3 {
+  background-image: url(../images/subscribe_3.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.pricing-value {
+  margin: 200px 0 40px;
+  line-height: 1em;
+}
+
+.pricing-footer {
+  margin: 64px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 150%;
+}
+
+.batton1 {
+  display: block;
+  height: 57px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 13.3px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+  .section2 {
+    margin: 0 20px;
+    padding: 100px 0 0;
+  }
+
+  .flex__row {
+    display: flex;
+    flex-direction: column;
+    margin: 45px 0 0;
+  }
+
+  .pricing-item {
+    margin-bottom: 40px;
   }
 }
