@@ -165,6 +165,10 @@ h2 {
   width: 100%;
 }
 
+.cl {
+  color: #cacaca;
+}
+
 .none {
   font-size: 11px;
 }
@@ -446,7 +450,8 @@ a {
 .flex__row {
   display: flex;
   justify-content: space-between;
-  margin: 45px 0 40px;
+  gap: 50px;
+  margin: 45px 0;
 }
 
 span {
@@ -505,7 +510,7 @@ span {
 }
 
 @media (max-width: 780px) {
-  .section2 {
+  section2 {
     margin: 0 20px;
     padding: 100px 0 0;
   }
@@ -514,10 +519,6 @@ span {
     display: flex;
     flex-direction: column;
     margin: 45px 0 0;
-  }
-
-  .pricing-item {
-    margin-bottom: 40px;
   }
 }
 .news-item {
@@ -612,5 +613,68 @@ h3 {
 
   .block__item {
     flex: 1 1 575px;
+  }
+}
+.section3 {
+  padding-top: 100px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  max-width: 1200px;
+}
+
+.align {
+  text-align: center;
+}
+
+.flex__conteiner {
+  display: flex;
+  gap: 144px;
+  margin-top: 64px;
+}
+.flex__text {
+  flex: 0 1 600px;
+}
+
+.picture {
+  flex: 0 1 333px;
+  width: 100%;
+}
+
+.batton3 {
+  display: table;
+  height: 57px;
+  background-color: #95390c;
+  color: #ffffff;
+  border-radius: 32px;
+  font-size: 12.8px;
+  margin-top: 16px;
+  padding: 16px 40px;
+}
+
+@media (max-width: 780px) {
+  .section3 {
+    margin: 0 20px;
+    padding: 100px 0 0;
+  }
+
+  .flex__conteiner {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 16px;
+    margin-top: 48px;
+  }
+  .flex__text {
+    flex: 1 0 100%;
+  }
+
+  .picture {
+    flex: 1 1 333px;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
   }
 }
