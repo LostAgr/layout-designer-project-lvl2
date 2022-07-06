@@ -59,6 +59,9 @@ a {
 .margl16 {
     margin-left: 16px;
 }
+.margt18 {
+    margin-top: 18px;
+}
 .margt31 {
     margin-top: 31px;
 }
@@ -78,6 +81,9 @@ a {
 }
 .margt24 {
     margin-top: 24px;
+}
+.margl24 {
+    margin-left: 24px;
 }
 .marg24 {
     margin: 24px 0px;
@@ -430,7 +436,7 @@ h3 {
 @media (max-width: 780px) {
     .section3 {
         margin: 0 20px;
-        padding: 100px 0 0;
+        padding: 100px 0;
         }
         .flex {
             &__conteiner {
@@ -451,5 +457,81 @@ h3 {
         font-size: 16px;
         line-height: 24px;
         text-transform: capitalize;
+    }
+}
+// footer
+.section4 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.bg-gradient {
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+h2 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    text-decoration: none;
+}
+li {
+    line-height: 24px;
+}
+ul {
+    margin-top: 15px;
+}
+.flex {
+
+    &__container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__item {
+        flex: 1 1 270px;
+    }
+}
+hr {
+    max-width: 5000px;
+    border: 1px solid #cacaca;
+    border-radius: 0px;
+}
+.contain {
+    display: flex;
+}
+@media (max-width: 780px) {
+    .section4 {
+        margin: 0 20px;
+        }
+    .flex {
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        &__item {
+            flex: 1 1 270px;
+        }
+    }
+    .margl24 {
+        margin-left: 24px;
+    }
+    .contain {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .margl16 {
+        margin-top: 16px;
+        margin-left: 0;
     }
 }
