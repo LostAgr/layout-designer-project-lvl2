@@ -549,6 +549,12 @@ a {
   max-width: 1200px;
 }
 
+.section22 {
+  margin: 0 auto;
+  padding-top: 100px;
+  max-width: 1200px;
+}
+
 .flex__row {
   display: flex;
   justify-content: space-between;
@@ -609,6 +615,44 @@ span {
   font-size: 13.3px;
   line-height: 57px;
   width: 100%;
+}
+
+.track__contain {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 25px;
+  margin-top: 48px;
+}
+.track__items {
+  display: flex;
+  align-items: center;
+  flex: 1 1 380px;
+  font-size: 12.8px;
+  line-height: 19.2px;
+}
+.track__img {
+  width: 55px;
+  height: 55px;
+}
+.track__time {
+  margin-left: auto;
+  color: #e0e0e0;
+}
+
+.track-info {
+  margin-left: 15px;
+  text-align: start;
+}
+
+.song {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.autor {
+  color: #e0e0e0;
 }
 
 @media (max-width: 780px) {
@@ -793,7 +837,7 @@ h3 {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
-h2 {
+.h2 {
   font-size: 18px;
   line-height: 27px;
   font-weight: bold;
