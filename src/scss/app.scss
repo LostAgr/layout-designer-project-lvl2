@@ -45,6 +45,9 @@ h2 {
 .none {
     font-size: 11px;
 }
+.textaligh{
+    text-align: start;
+}
 a {
     text-decoration: none;
 }
@@ -596,8 +599,45 @@ h3 {
     margin-top: 16px;
     padding: 0 40px;
 }
+// page 2 section 4
+.section24 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.artist {
+	&__contain {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 25px;
+        column-gap: 50px;
+        text-align: center;
+        margin-top: 48px;
+	}
+}
+.artist-item {
+    flex: 0 1 250px;
+}
+.artist-info {
+    margin-top: 17px;
+}
+.group {
+    font-size: 18px;
+    font-weight: bold;
+}
+.followers {
+    font-size: 16px;
+    font-weight: normal;
+    color: $color3;
+}
+
 @media (max-width: 780px) {
     .section3 {
+        margin: 0 20px;
+        padding: 100px 0;
+        }
+    .section24 {
         margin: 0 20px;
         padding: 100px 0;
         }
@@ -620,6 +660,12 @@ h3 {
         font-size: 16px;
         line-height: 24px;
         text-transform: capitalize;
+    }
+    .artist-item {
+        flex: 0 1 137px;
+    }
+    .wids {
+        width: 137px;
     }
 }
 // footer
