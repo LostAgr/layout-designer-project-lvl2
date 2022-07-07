@@ -399,7 +399,6 @@ span {
     width: 100%;
 }
 .track {
-
     &__contain {
         display: flex;
         flex-wrap: wrap;
@@ -407,20 +406,17 @@ span {
         row-gap: 25px;
         margin-top: 48px;
     }
-
     &__items {
         display: flex;
         align-items: center;
-        flex: 1 1 380px;
+        flex: 0 1 550px;
         font-size: 12.8px;
         line-height: 19.2px;
     }
-
     &__img {
         width: 55px;
         height: 55px;
     }
-
     &__time {
         margin-left: auto;
         color: $color3;
@@ -437,7 +433,6 @@ span {
 .autor {
     color: $color3;
 }
-
 @media (max-width: 780px) {
     section2 {
         margin: 0 20px;
@@ -494,6 +489,32 @@ h3 {
 .block__item {
     flex: 0 1 575px;
 }
+// page 2 section 3
+.album {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    &__contain {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 25px;
+        column-gap: 50px;
+        margin-top: 48px;
+    }
+    &__items {
+        flex: 0 1 250px;
+    }
+    &__text {
+        margin-top: 18px;
+        text-align: start;
+    }
+}
+.year {
+    color: $color3;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: normal;
+}
 @media (max-width: 1100px) {
     .section2 {
         margin: 0 20px;
@@ -529,6 +550,15 @@ h3 {
     }
     .block__item {
         flex: 1 1 575px;
+    }
+    .size137 {
+        width: 137px;
+        height: 137px;
+    }
+    .album {
+        &__items {
+            flex: 0 1 137px;
+        }
     }
 }
 // section 4
