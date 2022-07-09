@@ -7,14 +7,21 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
 }
-
 h2 {
     font-size: 38px;
     line-height: 57px;
     font-weight: bold;
     text-transform: uppercase;
 }
-
+h4 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+}
+.svg {
+    width: 20px;
+    height: 20px;
+}
 .header {
     background-image: url(../images/banner.png);
     background-position: center;
@@ -45,6 +52,9 @@ h2 {
 .none {
     font-size: 11px;
 }
+.tt {
+    text-transform: uppercase;
+}
 .textaligh{
     text-align: start;
 }
@@ -54,6 +64,12 @@ a {
 .menu {
     &__color {
         color: $color10;
+    }
+    &__item2 {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-left: auto;
     }
     &__item1 {
         display: flex;
@@ -96,6 +112,11 @@ a {
 .logo {
     width: 24px;
     height: 24px;
+}
+.logo1 {
+    fill: $color10;
+    width: 20px;
+    height: 20px;
 }
 .margt24 {
     margin-top: 24px;
@@ -199,7 +220,8 @@ a {
     margin-bottom: 48px;
 }
 .batton11 {
-    display: block;
+    display: flex;
+    align-items: center;
     height: 62px;
     width: 200px;
     line-height: 62px;
@@ -210,7 +232,8 @@ a {
     font-size: 12.8px;
 }
 .batton12 {
-    display: block;
+    display: flex;
+    align-items: center;
     height: 62px;
     width: 200px;
     padding: 0 30px;
@@ -226,6 +249,7 @@ a {
 @media (max-width: 780px) {
     .section {
         margin: 0 20px;
+        padding: 250px 0;
     }
     .header__menu {
         display: flex;
@@ -273,7 +297,7 @@ a {
         text-align: start;
     }
     .section21 {
-        margin-top: 55px;
+        margin-top: 25px;
     }
     .section1 {
         text-align: center;
@@ -301,13 +325,21 @@ a {
             width: 200px;
             height: 62px;
 		}
-}
-    .menu__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        width: 100%;
     }
+    .menu {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            width: 100%;
+        }
+        &__item2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            width: 100%;
+            }
+        }
     .menu__coloritem {
         color: $color5;
         margin: 0;
@@ -437,10 +469,6 @@ span {
     color: $color3;
 }
 @media (max-width: 780px) {
-    section2 {
-        margin: 0 20px;
-        padding: 100px 0 0;
-    }
     .flex {
     &__row {
         display: flex;
@@ -493,6 +521,11 @@ h3 {
     flex: 0 1 575px;
 }
 // page 2 section 3
+.section23 {
+    margin: 0 auto;
+    padding-top: 100px;
+    max-width: 1200px;
+}
 .album {
     font-size: 18px;
     line-height: 27px;
@@ -519,10 +552,6 @@ h3 {
     font-weight: normal;
 }
 @media (max-width: 1100px) {
-    .section2 {
-        margin: 0 20px;
-        padding: 100px 0 0;
-    }
     h3 {
         font-size: 16px;
         line-height: 24px;
@@ -670,19 +699,19 @@ h3 {
 }
 // footer
 .section4 {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-top: 62px;
+    padding-bottom: 72px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.section5 {
+    padding-top: 40px;
+    padding-bottom: 49px;
     margin: 0 auto;
     max-width: 1200px;
 }
 .bg-gradient {
     background: linear-gradient(89.75deg, $color6 32.83%, $color8 81.56%);
-}
-.h2 {
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 .links {
     color: $color3;
@@ -718,6 +747,9 @@ hr {
     .section4 {
         margin: 0 20px;
     }
+    .section5{
+        margin: 0 20px;
+    }
     .flex {
         &__container {
             display: flex;
@@ -738,5 +770,13 @@ hr {
     .margll16 {
         margin-top: 16px;
         margin-left: 0;
+    }
+}
+@media (max-width: 1240px) {
+    .section, .section3, .section4, .section20, .section22, .section23, .section24 {
+        margin: 0 20px;
+    }
+    .section2 {
+        margin: 100px 20px 0;
     }
 }
