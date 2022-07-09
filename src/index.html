@@ -15,11 +15,13 @@
                     <img src="./images/logo.svg" class="logo" alt="logo">
                     <p class="menu__color margl16" href="">MUSIC BOX</p>
                 </div>
-                <nav class="menu__item margl90">
-                    <a class="menu__color" href="">ГЛАВНАЯ</a>
-                    <a class="menu__coloritem" href="">КАТАЛОГ</a>
-                    <a class="menu__coloritem" href="">ИСПОЛНИТЕЛИ</a>
-                    <a class="menu__coloritem" href="">КОНТАКТЫ</a>
+                <nav class="margl90">
+                    <p class="menu__item">
+                        <a class="menu__color" href="">ГЛАВНАЯ</a>
+                        <a class="menu__coloritem" href="">КАТАЛОГ</a>
+                        <a class="menu__coloritem" href="">ИСПОЛНИТЕЛИ</a>
+                        <a class="menu__coloritem" href="">КОНТАКТЫ</a>
+                    </p>
                 </nav>
                 <div class="menu__item2">
                     <form></form>
@@ -31,7 +33,7 @@
             <div class="section1">
                 <h1>ОНЛАЙН МУЗЫКА ГДЕ УГОДНО</h1>
                 <h2>БЕЗ ОГРАНИЧЕНИЙ</h2>
-                <p class="fz1 margt31">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+                <p class="fz1 margt16">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
                 <div class="form__row1">
                     <form action="">
                         <div class="form__row">
@@ -76,39 +78,45 @@
     </section>
     <section id="page-news" class="section2">
         <h2>Последние новости</h2>
-        <div class="news-item">
-            <img class="wds" src="./images/Music to Be Murdered By.png" alt="Не забудьте про alt">
-            <div class="block__item">
-                <div class="news-body">
-                    <h3>Music to Be Murdered By</h3>
-                    <p class="margt30 fz1">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
+        <div class="news__contain">
+            <div class="news__item">
+                <div class="block__item">
+                    <img class="wds" src="./images/Music to Be Murdered By.png" alt="Не забудьте про alt">
                 </div>
-                <div class="margt24">
-                    <div class="news-author">
-                        <img src="./images/avatar.png" alt="avatar">
-                        <p class="mg">MUSIC BOX</p>
-                        <p>17/01/2020</p>
+                <div class="block__item">
+                    <div class="news-body">
+                        <h3>Music to Be Murdered By</h3>
+                        <p class="margt30 fz1">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
                     </div>
-                    <a href="#" class="batton2">К альбому</a>
+                    <div class="margt24">
+                        <div class="news-author">
+                            <img src="./images/avatar.png" alt="avatar">
+                            <p class="mg">MUSIC BOX</p>
+                            <p>17/01/2020</p>
+                        </div>
+                        <a href="#" class="batton2">К альбому</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="news-item1">
-            <div class="block__item">
-                <div class="news-body">
-                    <h3>Ordinary Man</h3>
-                    <p class="margt30 fz1">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
-                </div>
-                <div class="margt24">
-                    <div class="news-author">
-                        <img src="./images/avatar.png" alt="avatar">
-                        <p class="mg">MUSIC BOX</p>
-                        <p>24/02/2020</p>
+            <div class="news__item1">
+                <div class="block__item">
+                    <div class="news-body">
+                        <h3>Ordinary Man</h3>
+                        <p class="margt30 fz1">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
                     </div>
-                    <a href="#" class="batton2">К альбому</a>
+                    <div class="margt24">
+                        <div class="news-author">
+                            <img src="./images/avatar.png" alt="avatar">
+                            <p class="mg">MUSIC BOX</p>
+                            <p>24/02/2020</p>
+                        </div>
+                        <a href="#" class="batton2">К альбому</a>
+                    </div>
+                </div>
+                <div class="block__item">
+                    <img class="wds" src="./images/Ordinary Man.png" alt="Не забудьте про alt">
                 </div>
             </div>
-            <img class="wds" src="./images/Ordinary Man.png" alt="Не забудьте про alt">
         </div>
     </section>
     <section id="page-app" class="section3">
@@ -116,11 +124,10 @@
         <div class="flex__conteiner">
             <div class="flex__text">
                 <p class="fz1 cl">Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS</p>
-                <br>
-                <p class="fz1 cl">С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.</p>
-                <button class="batton3">
+                <p class="fz1 cl margt16">С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.</p>
+                <a class="batton3" href="#">
                     Скачать
-                </button>
+                </a>
             </div>
             <img src="./images/iphone.png" alt="mob tel" class="picture">
         </div>
@@ -150,7 +157,7 @@
                     <h4 class="tt">Контакты</h4>
                     <ul>
                         <li><a class="links" href="#">hello@music.box</a></li>
-                        <li><a class="links" href="#">Russia, Moscow. Music Box studio</a></li>
+                        <li><p class="links">Russia, Moscow. Music Box studio</p></li>
                         <li><a class="links" href="#">+ 7 499 999 99 99</a></li>
                     </ul>
                 </div>

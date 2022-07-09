@@ -18,6 +18,12 @@ h4 {
     line-height: 27px;
     font-weight: bold;
 }
+h5 {
+    font-weight: 700;
+    font-size: 12.8px;
+    line-height: 150%;
+    color: $color10;
+}
 .svg {
     width: 20px;
     height: 20px;
@@ -93,6 +99,9 @@ a {
 .margll16 {
     margin-left: 16px;
 }
+.margt16 {
+    margin-top: 16px;
+}
 .margt18 {
     margin-top: 18px;
 }
@@ -145,7 +154,7 @@ a {
 }
 .section20 {
     position: relative;
-    padding: 200px 0px;
+    padding: 250px 0 223px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -292,6 +301,9 @@ a {
     .seach {
         width: 100%;
     }
+    .margt16 {
+        margin-top: 16px;
+    }
     .section, .section20 {
         margin: 0 20px;
         text-align: start;
@@ -331,7 +343,6 @@ a {
             display: flex;
             flex-direction: column;
             justify-content: start;
-            width: 100%;
         }
         &__item2 {
             display: flex;
@@ -369,7 +380,7 @@ a {
 // section 2
 .section2 {
     margin: 0 auto;
-    margin-top: 100px;
+    padding-top: 100px;
     text-align: center;
     max-width: 1200px;
 }
@@ -478,16 +489,20 @@ span {
     }
 }
 // section 3
-.news-item {
-    display: flex;
-    gap: 50px;
-    margin: 50px 0;
-}
-.news-item1 {
-    display: flex;
-    gap: 50px;
-    margin: 50px 0;
+.news {
+
+    &__contain {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        margin-top: 48px;
     }
+    &__item, &__item1 {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 50px;
+    }
+}
 .news-body {
     text-align: start;
 }
@@ -518,7 +533,7 @@ h3 {
     color: $color4;
 }
 .block__item {
-    flex: 0 1 575px;
+    flex: 1 1 50%;
 }
 // page 2 section 3
 .section23 {
@@ -552,20 +567,34 @@ h3 {
     font-weight: normal;
 }
 @media (max-width: 1100px) {
+    .news {
+
+        &__contain {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 50px;
+            margin-top: 48px;
+        }
+        &__item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            column-gap: 50px;
+        }
+        &__item1 {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: space-between;
+            column-gap: 50px;
+        }
+    }
+    .news-body {
+        margin-top: 50px;
+    }
     h3 {
         font-size: 16px;
         line-height: 24px;
         text-transform: capitalize;
-    }
-    .news-item {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 50px;
-    }
-    .news-item1 {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        gap: 50px;
     }
     .wds {
         flex: 1 1 100%;
@@ -581,7 +610,7 @@ h3 {
         width: auto;
     }
     .block__item {
-        flex: 1 1 575px;
+        flex: 1 1 100%;
     }
     .size137 {
         width: 137px;
@@ -627,13 +656,13 @@ h3 {
     line-height: 57px;
     margin-top: 16px;
     padding: 0 40px;
+    width: auto;
 }
 // page 2 section 4
 .section24 {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     padding-top: 100px;
-    margin-bottom: 100px;
 }
 .artist {
 	&__contain {
@@ -777,6 +806,6 @@ hr {
         margin: 0 20px;
     }
     .section2 {
-        margin: 100px 20px 0;
+        margin: 0 20px;
     }
 }
