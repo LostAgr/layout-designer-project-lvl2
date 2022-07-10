@@ -36,6 +36,7 @@ h5 {
         position: absolute;
         top: 25px;
         display: flex;
+        align-items: center;
         flex-wrap: wrap;
         width: 100%;
     }
@@ -99,6 +100,9 @@ a {
 .margll16 {
     margin-left: 16px;
 }
+.margt15 {
+    margin-top: 15px;
+}
 .margt16 {
     margin-top: 16px;
 }
@@ -154,7 +158,7 @@ a {
 }
 .section20 {
     position: relative;
-    padding: 250px 0 223px;
+    padding: 225px 0 223px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -255,7 +259,7 @@ a {
 .color6 {
     color: $color6;
 }
-@media (max-width: 780px) {
+@media (max-width: 414px) {
     .section {
         margin: 0 20px;
         padding: 250px 0;
@@ -301,7 +305,7 @@ a {
     .seach {
         width: 100%;
     }
-    .margt16 {
+    .margt31 {
         margin-top: 16px;
     }
     .section, .section20 {
@@ -342,7 +346,7 @@ a {
         &__item {
             display: flex;
             flex-direction: column;
-            justify-content: start;
+            align-items: start;
         }
         &__item2 {
             display: flex;
@@ -479,7 +483,7 @@ span {
 .autor {
     color: $color3;
 }
-@media (max-width: 780px) {
+@media (max-width: 414px) {
     .flex {
     &__row {
         display: flex;
@@ -566,7 +570,7 @@ h3 {
     line-height: 1.5;
     font-weight: normal;
 }
-@media (max-width: 1100px) {
+@media (max-width: 414px) {
     .news {
 
         &__contain {
@@ -690,7 +694,7 @@ h3 {
     color: $color3;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 414px) {
     .section3 {
         margin: 0 20px;
         padding: 100px 0;
@@ -749,12 +753,6 @@ h3 {
     font-weight: normal;
     text-decoration: none;
 }
-li {
-    line-height: 24px;
-}
-ul {
-    margin-top: 15px;
-}
 .flex {
     &__container {
         display: flex;
@@ -772,7 +770,7 @@ hr {
 .contain {
     display: flex;
 }
-@media (max-width: 780px) {
+@media (max-width: 414px) {
     .section4 {
         margin: 0 20px;
     }

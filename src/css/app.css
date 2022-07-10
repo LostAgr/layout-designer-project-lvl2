@@ -179,6 +179,7 @@ h5 {
   position: absolute;
   top: 25px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -249,6 +250,10 @@ a {
   margin-left: 16px;
 }
 
+.margt15 {
+  margin-top: 15px;
+}
+
 .margt16 {
   margin-top: 16px;
 }
@@ -317,7 +322,7 @@ a {
 
 .section20 {
   position: relative;
-  padding: 250px 0 223px;
+  padding: 225px 0 223px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -435,7 +440,7 @@ a {
   color: #5328a1;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 414px) {
   .section {
     margin: 0 20px;
     padding: 250px 0;
@@ -491,7 +496,7 @@ a {
     width: 100%;
   }
 
-  .margt16 {
+  .margt31 {
     margin-top: 16px;
   }
 
@@ -538,7 +543,7 @@ a {
   .menu__item {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    align-items: start;
   }
   .menu__item2 {
     display: flex;
@@ -709,7 +714,7 @@ span {
   color: #e0e0e0;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 414px) {
   .flex__row {
     display: flex;
     flex-direction: column;
@@ -801,7 +806,7 @@ h3 {
   font-weight: normal;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 414px) {
   .news__contain {
     display: flex;
     flex-wrap: wrap;
@@ -936,7 +941,7 @@ h3 {
   color: #e0e0e0;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 414px) {
   .section3 {
     margin: 0 20px;
     padding: 100px 0;
@@ -1002,14 +1007,6 @@ h3 {
   text-decoration: none;
 }
 
-li {
-  line-height: 24px;
-}
-
-ul {
-  margin-top: 15px;
-}
-
 .flex__container {
   display: flex;
   gap: 40px;
@@ -1028,7 +1025,7 @@ hr {
   display: flex;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 414px) {
   .section4 {
     margin: 0 20px;
   }
