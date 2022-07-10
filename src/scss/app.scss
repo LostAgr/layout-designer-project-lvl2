@@ -259,43 +259,7 @@ a {
 .color6 {
     color: $color6;
 }
-@media (max-width: 414px) {
-    .section {
-        margin: 0 20px;
-        padding: 250px 0;
-    }
-    .header__menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-    .menu__item {
-        margin: 0;
-    }
-    .margl90 {
-        margin: 10px 0;
-    }
-    .margl24 {
-    margin-left: 0;
-    }
-    .forms__row {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-    .forms {
-        width: 100%;
-    }
-    .form__element {
-        margin-top: 12px;
-        margin-bottom: 12px;
-        width: 100%;
-    }
-    .batton {
-        margin-top: 12px;
-    }
-}
-@media (max-width: 414px) {
+@media (max-width: 480px) {
     .header__menu {
         display: flex;
         flex-direction: column;
@@ -379,6 +343,42 @@ a {
     }
     .forms::placeholder {
         color: $color10;
+    }
+}
+@media (max-width: 480px) {
+    .section {
+        margin: 0 20px;
+        padding: 250px 0;
+    }
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .menu__item {
+        margin: 0;
+    }
+    .margl90 {
+        margin: 10px 0;
+    }
+    .margl24 {
+    margin-left: 0;
+    }
+    .forms__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .forms {
+        width: 100%;
+    }
+    .form__element {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .batton {
+        margin-top: 12px;
     }
 }
 // section 2
@@ -483,7 +483,7 @@ span {
 .autor {
     color: $color3;
 }
-@media (max-width: 414px) {
+@media (max-width: 480px) {
     .flex {
     &__row {
         display: flex;
@@ -570,7 +570,7 @@ h3 {
     line-height: 1.5;
     font-weight: normal;
 }
-@media (max-width: 414px) {
+@media (max-width: 480px) {
     .news {
 
         &__contain {
@@ -694,7 +694,7 @@ h3 {
     color: $color3;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 480px) {
     .section3 {
         margin: 0 20px;
         padding: 100px 0;
@@ -770,7 +770,7 @@ hr {
 .contain {
     display: flex;
 }
-@media (max-width: 414px) {
+@media (max-width: 480px) {
     .section4 {
         margin: 0 20px;
     }
@@ -800,10 +800,7 @@ hr {
     }
 }
 @media (max-width: 1240px) {
-    .section, .section3, .section4, .section20, .section22, .section23, .section24 {
-        margin: 0 20px;
-    }
-    .section2 {
+    .section, .section2, .section3, .section4, .section20, .section22, .section23, .section24 {
         margin: 0 20px;
     }
 }
